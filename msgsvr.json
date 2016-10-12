@@ -1,0 +1,10 @@
+{
+	"fileUris": 
+	[
+		"https://ncgdemos.blob.core.windows.net/files/update.sh",
+		"https://ncgdemos.blob.core.windows.net/files/demosvrstart.sh",
+		"https://ncgdemos.blob.core.windows.net/files/LinuxServer.py",
+	],
+
+	"commandToExecute": " sh update.sh "
+}
