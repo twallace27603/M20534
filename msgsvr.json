@@ -7,4 +7,5 @@
 	],
 
 	"commandToExecute": " sh update.sh "
+
 }
