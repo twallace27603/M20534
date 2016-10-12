@@ -1,9 +1,9 @@
 {
 	"fileUris": 
 	[
-		"https://ncgdemos.blob.core.windows.net/files/update.sh",
-		"https://ncgdemos.blob.core.windows.net/files/demosvrstart.sh",
-		"https://ncgdemos.blob.core.windows.net/files/LinuxServer.py",
+		"https://github.com/twallace27603/M20534/blob/master/update.sh",
+		"https://github.com/twallace27603/M20534/blob/master/demosvrstart.sh",
+		"https://github.com/twallace27603/M20534/blob/master/LinuxServer.py",
 	],
 
 	"commandToExecute": " sh update.sh "
