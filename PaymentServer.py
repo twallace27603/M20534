@@ -5,6 +5,7 @@ import socket, sys, struct, os
 import uuid
 import datetime
 from multiprocessing import Process, Pool
+import json
 
 tcpPort = 8181
 
@@ -45,14 +46,8 @@ class TCPHandler(asyncore.dispatcher_with_send):
         if data:
             data = data.decode()
             command = data[0]
-            if command == '1':
-                #Process echo
-                message = get_details()
-            else:
-                #Process Ping
-                message = "success"
-            result = "Received {0} \n Processed {1}".format(command, message)
-            self.sendall(result.encode())
+            message = json.dumps({'Amount':command, 'Status':'Success'})
+            self.sendall(message.encode())
         else:
             self.close()
 
